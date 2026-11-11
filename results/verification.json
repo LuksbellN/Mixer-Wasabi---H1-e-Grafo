@@ -1,0 +1,26 @@
+{
+  "verified_utc": "2026-11-11T18:22:03.296263+00:00",
+  "status": "passed",
+  "checks": [
+    "archive_sha256",
+    "selection_and_all_inputs",
+    "all_histories_complete",
+    "pagination_and_provider_totals",
+    "selected_mixers_present_in_histories",
+    "source_copy_consistency",
+    "independent_networkx_h1_partition",
+    "mixer_exclusion",
+    "exact_payment_relation_multiset",
+    "contraction_multiplicity",
+    "graphml_counts_and_relations",
+    "cached_page_hashes"
+  ],
+  "addresses_collected": 129,
+  "pages": 129,
+  "transactions": 74,
+  "vertices_before": 927,
+  "vertices_after": 664,
+  "relations_each_graph": 7349,
+  "first_selected_tx_checked_in_archive": "f6e02e60edb460892fdc13eca89f857796c7f37f415c7bf84dd0805a13ab2912",
+  "example_checked_in_cached_source": "b91f92637361407588596f6f158b684e14554942e03b1a5339283c0a6698af60"
+}

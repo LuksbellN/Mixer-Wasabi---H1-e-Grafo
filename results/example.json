@@ -1,0 +1,70 @@
+{
+  "txid": "b91f92637361407588596f6f158b684e14554942e03b1a5339283c0a6698af60",
+  "time": 1509966481,
+  "inputs": 4,
+  "outputs": 2,
+  "before_vertices": 6,
+  "after_vertices": 3,
+  "relations": 8,
+  "addresses": [
+    {
+      "label": "A1",
+      "address": "14CSwbAf3b7DyGjbAS1pyY4uwyPDqJ1nzk",
+      "cluster_label": "C3",
+      "cluster": "H1_6ed82d07b0aa4f9d39be",
+      "seed": false
+    },
+    {
+      "label": "A2",
+      "address": "14UT6Sc7k8J2CruRAEDjndvSiK1AcGvgXq",
+      "cluster_label": "C1",
+      "cluster": "H1_1237934dd84dadce2a93",
+      "seed": true
+    },
+    {
+      "label": "A3",
+      "address": "1A21n6ytujSVoTARhkREqYoXS9tKFPbyPf",
+      "cluster_label": "C1",
+      "cluster": "H1_1237934dd84dadce2a93",
+      "seed": true
+    },
+    {
+      "label": "A4",
+      "address": "1BWWHNfC9659C4ogd8xiFZ8v4MpwocqRPU",
+      "cluster_label": "C2",
+      "cluster": "H1_4bccb02ecaa6b20ed3bd",
+      "seed": true
+    },
+    {
+      "label": "A5",
+      "address": "1BeZJkAFJJorjjUrjb6ksV9Kj7T71gv6LX",
+      "cluster_label": "C1",
+      "cluster": "H1_1237934dd84dadce2a93",
+      "seed": false
+    },
+    {
+      "label": "A6",
+      "address": "1HWaWvrcotbdYnFjhayjXTMJQoPQGK9DgV",
+      "cluster_label": "C1",
+      "cluster": "H1_1237934dd84dadce2a93",
+      "seed": false
+    }
+  ],
+  "clusters": [
+    {
+      "label": "C1",
+      "id": "H1_1237934dd84dadce2a93",
+      "size_in_full_graph": 7
+    },
+    {
+      "label": "C2",
+      "id": "H1_4bccb02ecaa6b20ed3bd",
+      "size_in_full_graph": 1
+    },
+    {
+      "label": "C3",
+      "id": "H1_6ed82d07b0aa4f9d39be",
+      "size_in_full_graph": 1
+    }
+  ]
+}

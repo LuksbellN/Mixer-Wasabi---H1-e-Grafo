@@ -1,0 +1,129 @@
+{
+  "created_utc": "2026-11-11T18:17:57.508244+00:00",
+  "provider": "rawaddr",
+  "archive_sha256": "5e5d695e8d15ad4a8edccfbf9ed6373d484f5ed6ceb9e0110ac30d284695b422",
+  "selection": {
+    "order": "time,txid",
+    "count": 10,
+    "part": 0,
+    "parts": 1
+  },
+  "total_supplied_transactions": 1001,
+  "total_supplied_input_addresses": 73454,
+  "selected_transactions": 10,
+  "selected_input_occurrences": 134,
+  "coverage": {
+    "requested": 129,
+    "complete": 129,
+    "errors": 0,
+    "not_attempted": 0,
+    "pages": 129,
+    "collection_min_utc": "2026-11-11T16:42:19.368232+00:00",
+    "collection_max_utc": "2026-11-11T17:03:39.292546+00:00"
+  },
+  "transactions": {
+    "occurrences_including_selected": 286,
+    "unique": 74,
+    "history_unique": 74,
+    "coinbase": 0,
+    "missing_input_addresses": 0,
+    "missing_output_addresses": 0
+  },
+  "h1": {
+    "excluded_known_mixers": 10,
+    "excluded_hashes": [
+      "4b5c7c15e9493300ac976a4aec28bfd7be4734f11cfe479f6f65ada98868351d",
+      "6cf85521ac0eb39bd6dd384fc026e9ce1b8118d1719c53e3810b60aafaae7ae9",
+      "909f57635bf869dfef0a470f4dff73629f99897e8016a27dfaeda185e72a2833",
+      "b8815bc4579472e03de5224d6c30f24bd114ada56676875e39525385b11d173a",
+      "c0fed4d284eeaba75a72714f849394d13dc4d283a1defd36e9e011eed167d81c",
+      "dee428fe79ea8ccb8a09ab7ad9cd2f22e1c623f36f985cadd9d500757adfabfc",
+      "e368f6c76a69cf97125eec2ae738157e4e85c5b70584ac82c195778598492c3e",
+      "f6e02e60edb460892fdc13eca89f857796c7f37f415c7bf84dd0805a13ab2912",
+      "f8d47cbcaee1be8ea21ccda955012a24df2f0ca6f0cc4c27330d61b9c18933af",
+      "f93bacef5a203acbff288c196e622089c3adaf46973d419ff84323680db076dd"
+    ],
+    "evidence_transactions": 37,
+    "successful_unions": 263,
+    "seed_clusters": 128,
+    "nontrivial_clusters": 33,
+    "largest_cluster_size": 34
+  },
+  "graph": {
+    "addresses": 927,
+    "clusters": 664,
+    "relations": 7349,
+    "cluster_loops": 39
+  },
+  "selected_hashes": [
+    "f6e02e60edb460892fdc13eca89f857796c7f37f415c7bf84dd0805a13ab2912",
+    "dee428fe79ea8ccb8a09ab7ad9cd2f22e1c623f36f985cadd9d500757adfabfc",
+    "f93bacef5a203acbff288c196e622089c3adaf46973d419ff84323680db076dd",
+    "6cf85521ac0eb39bd6dd384fc026e9ce1b8118d1719c53e3810b60aafaae7ae9",
+    "f8d47cbcaee1be8ea21ccda955012a24df2f0ca6f0cc4c27330d61b9c18933af",
+    "c0fed4d284eeaba75a72714f849394d13dc4d283a1defd36e9e011eed167d81c",
+    "4b5c7c15e9493300ac976a4aec28bfd7be4734f11cfe479f6f65ada98868351d",
+    "b8815bc4579472e03de5224d6c30f24bd114ada56676875e39525385b11d173a",
+    "e368f6c76a69cf97125eec2ae738157e4e85c5b70584ac82c195778598492c3e",
+    "909f57635bf869dfef0a470f4dff73629f99897e8016a27dfaeda185e72a2833"
+  ],
+  "largest_clusters": [
+    {
+      "cluster": "H1_c570f8b65eaeedc9ade6",
+      "size": 34,
+      "seed_count": 0
+    },
+    {
+      "cluster": "H1_8cf335c2e206ff08f67c",
+      "size": 15,
+      "seed_count": 0
+    },
+    {
+      "cluster": "H1_06c11244f94a6381d0c2",
+      "size": 14,
+      "seed_count": 0
+    },
+    {
+      "cluster": "H1_3ff6795c91bded6ce17a",
+      "size": 14,
+      "seed_count": 0
+    },
+    {
+      "cluster": "H1_ff6f5e1f450c18ed86bd",
+      "size": 14,
+      "seed_count": 0
+    },
+    {
+      "cluster": "H1_8d1084197855e3dd7f03",
+      "size": 13,
+      "seed_count": 0
+    },
+    {
+      "cluster": "H1_d0630fb6a909ac9b3633",
+      "size": 13,
+      "seed_count": 0
+    },
+    {
+      "cluster": "H1_0cf3e665bd732eafc271",
+      "size": 12,
+      "seed_count": 0
+    },
+    {
+      "cluster": "H1_133194225faf558d533d",
+      "size": 12,
+      "seed_count": 0
+    },
+    {
+      "cluster": "H1_3a8df28c5a4b037eb047",
+      "size": 12,
+      "seed_count": 0
+    }
+  ],
+  "limitations": [
+    "H1 é heurística, não identificação de pessoas.",
+    "Lista fornecida não garante exclusão de outros CoinJoins.",
+    "Relações entrada-saída não revelam o pareamento econômico.",
+    "Recorte cronológico não é amostra representativa.",
+    "Históricos consultados hoje; clusters não têm interpretação temporal anterior ao mixer."
+  ]
+}

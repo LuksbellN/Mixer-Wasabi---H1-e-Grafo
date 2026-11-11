@@ -1,0 +1,11 @@
+{
+  "python": "3.12.14 (main, Aug 25 2026, 14:01:42) [MSC v.1944 64 bit (AMD64)]",
+  "platform": "win32",
+  "packages": {
+    "matplotlib": "3.10.7",
+    "networkx": "3.7",
+    "scipy": "1.16.3",
+    "reportlab": "4.4.9",
+    "pypdf": "6.21.4"
+  }
+}
