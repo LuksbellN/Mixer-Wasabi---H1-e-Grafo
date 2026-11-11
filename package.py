@@ -1,11 +1,10 @@
-"""Empacota código/dados/resultados e anexa o ZIP ao PDF já conferido."""
+"""Cria um ZIP separado com o código, os dados e os resultados."""
 import hashlib
 import json
 from pathlib import Path
 import zipfile
 
-from pypdf import PdfReader, PdfWriter
-from pypdf.generic import NameObject
+from pypdf import PdfReader
 
 from analyze import ROOT, save_json, utc
 
@@ -31,23 +30,12 @@ def main():
             if hashlib.sha256(z.read('Wasabi_H1/' + item['path'])).hexdigest() != item['sha256']:
                 raise ValueError('Conteúdo do ZIP divergente')
     pdf = ROOT/'report/Wasabi_H1_Lucas_Belchior.pdf'
-    writer = PdfWriter(clone_from=str(pdf))
-    names = writer.root_object.get('/Names')
-    if names is not None:
-        names.get_object().pop(NameObject('/EmbeddedFiles'), None)
-    writer.root_object.pop(NameObject('/AF'), None)
-    writer.add_attachment(archive.name, archive.read_bytes())
-    temp = pdf.with_suffix('.tmp.pdf')
-    with temp.open('wb') as stream:
-        writer.write(stream)
-    temp.replace(pdf)
     reader = PdfReader(pdf)
-    attachment = reader.attachments[archive.name]
-    if len(attachment) != 1 or attachment[0] != archive.read_bytes():
-        raise ValueError('Anexo do PDF não confere')
+    if reader.attachments:
+        raise ValueError('O PDF deve estar sem anexos; gere-o novamente com build_report.py')
     result = {'created_utc': utc(), 'files_in_zip': len(inventory), 'zip_bytes': archive.stat().st_size,
               'zip_sha256': hashlib.sha256(archive.read_bytes()).hexdigest(),
-              'pdf_pages': len(reader.pages), 'pdf_attachment_matches_zip': True,
+              'pdf_pages': len(reader.pages), 'pdf_attachments': 0,
               'pdf_bytes': pdf.stat().st_size,
               'pdf_sha256': hashlib.sha256(pdf.read_bytes()).hexdigest()}
     # Kept outside results to avoid recursively packaging a hash of the old package.

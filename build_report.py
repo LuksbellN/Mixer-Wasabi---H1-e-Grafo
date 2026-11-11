@@ -359,7 +359,7 @@ def main():
     for command in ['python -m pip install -r requirements.txt',
                     'python -m unittest -v', 'python analyze.py prepare --count 10',
                     'python collect.py', 'python analyze.py run', 'python build_report.py',
-                    'python verify.py', 'python package.py']:
+                    'python verify.py']:
         r.p(escape(command), 8, 'Mono', 10)
     r.p('Arquivo original: SHA-256', 9, 'Bold')
     digest = s['archive_sha256']
@@ -369,11 +369,9 @@ def main():
         'with No Names</i>. IMC, 2013. DOI: 10.1145/2504730.2504747. '
         '<link href="https://cseweb.ucsd.edu/~smeiklejohn/files/imc13.pdf" color="#333333">Artigo original</link>.', 8)
     r.p('[2] Dorier. <i>BIP 78: A Simple Payjoin Proposal</i>, seção Motivation. '
-        '<link href="https://bitcoin.org/bip/78/" color="#333333">bitcoin.org/bip/78</link>. '
-        '[3] Enunciado, orientações e arquivo fornecidos pelo professor; históricos públicos '
-        'obtidos em blockchain.info/rawaddr. Consultas em 11/11/2026.', 8)
-    r.p('Código, dados coletados e resultados acompanham o ZIP de reprodução; sua cópia '
-        'também está anexada ao PDF final. O arquivo original da disciplina não é duplicado.', 8)
+        '<link href="https://bitcoin.org/bip/78/" color="#333333">bitcoin.org/bip/78</link>.', 8)
+    r.p('[3] Enunciado, orientações e arquivo fornecidos pelo professor; históricos públicos '
+        'obtidos em blockchain.info/rawaddr.', 8)
     r.c.save()
     print(dest)
 

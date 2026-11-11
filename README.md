@@ -66,7 +66,7 @@ python verify.py
 python package.py
 ```
 
-Esses comandos usam os JSONs já incluídos. `verify.py` também precisa de `../wasabiTxs.tgz` para conferir o arquivo original. `package.py` atualiza o ZIP e o anexa ao PDF.
+Esses comandos usam os JSONs já incluídos. `verify.py` também precisa de `../wasabiTxs.tgz` para conferir o arquivo original. `package.py` atualiza o ZIP separado, sem alterar o PDF.
 
 Para refazer a seleção e a coleta, antes de `analyze.py run`:
 
@@ -82,7 +82,7 @@ A opção `--provider gateway` permite usar o endpoint POST do professor, caso e
 ## Arquivos
 
 - `report/Wasabi_H1_Lucas_Belchior.pdf`: capa e quatro páginas de relatório.
-- `Wasabi_H1_Lucas_Belchior_codigo_dados.zip`: código, dados coletados e resultados; também anexado ao PDF.
+- `Wasabi_H1_Lucas_Belchior_codigo_dados.zip`: código, dados coletados e resultados, em arquivo separado.
 - `data/manifest.json`: seleção, endereços e lista de mixers excluídos do H1.
 - `data/cache/`: páginas baixadas e estado de coleta de cada endereço.
 - `results/address_to_cluster.csv`: mapa dos endereços para os clusters.
@@ -112,4 +112,4 @@ SHA-256 do arquivo original `wasabiTxs.tgz`:
 5e5d695e8d15ad4a8edccfbf9ed6373d484f5ed6ceb9e0110ac30d284695b422
 ```
 
-O arquivo original não é duplicado no ZIP. As versões utilizadas estão em `data/environment.json`. Alguns leitores de navegador não mostram anexos PDF; nesse caso, usar o ZIP entregue separadamente.
+O arquivo original não é duplicado no ZIP. As versões utilizadas estão em `data/environment.json`.
